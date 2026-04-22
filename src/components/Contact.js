@@ -22,17 +22,31 @@ function Contact() {
           </p>
         </div>
 
-        <div className="social-links">
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">
-            <FaInstagram />
-          </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
-            <FaGithub />
-          </a>
-        </div>
+ <div className="social-links">
+  <a 
+    href="https://www.instagram.com/krishnadeo_choudhary" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaInstagram />
+  </a>
+
+  <a 
+    href="https://www.linkedin.com/in/krishnadeo-choudhary" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a 
+    href="https://www.github.com/krishna-3009" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaGithub />
+  </a>
+</div>
       </div>
     </section>
   );
