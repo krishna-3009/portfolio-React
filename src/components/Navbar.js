@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,8 +10,9 @@ function Navbar() {
     const handleScroll = () => {
       let current = "";
 
-      sections.forEach(section => {
+      sections.forEach((section) => {
         const sectionTop = section.offsetTop - 120;
+
         if (window.scrollY >= sectionTop) {
           current = section.id;
         }
@@ -20,7 +21,9 @@ function Navbar() {
       setActive(current);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -28,13 +31,20 @@ function Navbar() {
     <header className="navbar">
       <div className="logo">Krishna Deo Choudhary</div>
 
-      <i
-        className="fas fa-bars menu-toggle"
+      <button
+        type="button"
+        className={`menu-toggle ${menuOpen ? "open" : ""}`}
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={menuOpen}
         onClick={() => setMenuOpen(!menuOpen)}
-      ></i>
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-        {["home", "projects", "skills", "about", "contact"].map(item => (
+        {["home", "projects", "skills", "about", "contact"].map((item) => (
           <a
             key={item}
             href={`#${item}`}

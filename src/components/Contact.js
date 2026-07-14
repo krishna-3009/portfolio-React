@@ -40,7 +40,7 @@ function Contact() {
   </a>
 
   <a 
-    href="https://www.github.com/krishna-3009" 
+    href="https://github.com/krishna-3009" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -52,4 +52,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact

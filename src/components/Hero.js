@@ -1,26 +1,42 @@
-
-
+import img2 from "../images/Group 8.png";
 function Hero() {
   return (
-    <section
-      className="hero"
-      id="home"
-      style={{ backgroundImage: "url(../images/Group 8.png)" }}
-    >
-      <div className="hero-left">
-        <h1>Designer</h1>
-        <p className="hero-desc">
-          UI/UX product designer specialising in <br />
-          <span>UI design and design system</span>
+    <section className="hero" id="home">
+      <div className="hero-content">
+        <p className="hero-eyebrow">Hello, I’m</p>
+
+        <h1>
+          KRISHNADEO 
+          CHOUDHARY<span>.</span>
+        </h1>
+
+        <p className="hero-role">
+          UI/UX Designer & <br />
+          Front-End Developer
         </p>
+
+        <p className="hero-desc">
+          I design thoughtful digital experiences and turn them into clean,
+          responsive interfaces.
+        </p>
+<div className="hero-actions">
+          <a className="primary-btn" href="#portfolio">
+            View My Work
+          </a>
+          <a className="secondary-btn" href="#contact">
+            Contact Me
+          </a>
+        </div>
+        
       </div>
 
-      <div className="hero-right">
-        <h1>&lt;coder&gt;</h1>
-        <p className="hero-desc">
-          Front end developer who writes <br />
-          <span>clean and efficient code.</span>
-        </p>
+      <div className="hero-image-wrap">
+        <div className="hero-accent" />
+        <img
+          className="hero-image"
+           src={img2} 
+          alt="KRISHNADEO CHOUDHARY"
+        />
       </div>
     </section>
   );
