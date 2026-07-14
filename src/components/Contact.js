@@ -24,7 +24,7 @@ function Contact() {
 
  <div className="social-links">
   <a 
-    href="https://www.instagram.com/krishnadeo_choudhary" 
+    href="https://www.instagram.com/rajaaaa__30?igsh=Y2dhY3d1cW43NnZ5" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -32,7 +32,7 @@ function Contact() {
   </a>
 
   <a 
-    href="https://www.linkedin.com/in/krishnadeo-choudhary" 
+    href="https://www.linkedin.com/in/krishnadeo-choudhary-7a6308309?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
     target="_blank" 
     rel="noopener noreferrer"
   >
