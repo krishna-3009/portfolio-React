@@ -4,7 +4,7 @@ import resume from "../images/resume.pdf";
 function About() {
   return (
     <section className="about-section" id="about">
-      <div className="about-header">
+      <div className="about-header reveal">
         <span className="line"></span>
         <h2>ABOUT ME</h2>
         <span className="line"></span>
@@ -12,7 +12,7 @@ function About() {
 
       <div className="about-content">
         {/* TEXT */}
-        <div className="about-text">
+        <div className="about-text reveal reveal-left">
           <h3>Hello, I'm a B.Tech Student 👋</h3>
           <p>
             I am passionate about frontend development and UI/UX design. I enjoy
@@ -30,7 +30,7 @@ function About() {
         </div>
 
         {/* IMAGE */}
-        <div className="about-img">
+        <div className="about-img reveal reveal-right">
           <img src={img1} alt="Profile" />
         </div>
       </div>

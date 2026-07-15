@@ -3,12 +3,16 @@ import { useEffect, useState } from "react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
     const handleScroll = () => {
       let current = "";
+
+      // window.scrollY controls the compact navbar after the page is scrolled.
+      setIsScrolled(window.scrollY > 90);
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 120;
@@ -28,7 +32,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${isScrolled ? "shrink" : ""}`}>
       <div className="logo">Krishna Deo Choudhary</div>
 
       <button

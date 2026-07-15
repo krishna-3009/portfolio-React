@@ -38,13 +38,13 @@ function Projects() {
     <section className="projects" id="projects">
 
       {/* HEADER */}
-      <div className="projects-header">
+      <div className="projects-header reveal">
         <div className="line"></div>
         <h2>SOME OF MY LATEST WORK</h2>
         <div className="line"></div>
       </div>
 
-      <div className="slider-container">
+      <div className="slider-container reveal reveal-delay-1">
 
         {/* PREV BUTTON */}
         <button className="nav-btn prev" onClick={prev}>

@@ -36,7 +36,7 @@ function Skills() {
 
   return (
     <section className="skills-section" id="skills">
-      <div className="skills-header">
+      <div className="skills-header reveal">
         <span className="line"></span>
         <h2>SKILLS</h2>
         <span className="line"></span>
@@ -44,7 +44,7 @@ function Skills() {
 
       <div className="skills-grid">
         {skills.map((skill, i) => (
-          <div className="skill-card" key={i}>
+          <div className="skill-card reveal" key={i}>
             <img src={skill.logo} alt={skill.name} className="skill-logo" />
             <h3>{skill.name}</h3>
             <p>{skill.desc}</p>

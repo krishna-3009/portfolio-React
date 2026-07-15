@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-ic
 function Contact() {
   return (
     <section className="contact" id="contact">
-      <div className="glass-card">
+      <div className="glass-card reveal">
         <h2>CONTACT ME</h2>
 
         <div className="contact-info">

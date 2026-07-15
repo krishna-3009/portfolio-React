@@ -2,7 +2,7 @@ import img2 from "../images/Group 8.png";
 function Hero() {
   return (
     <section className="hero" id="home">
-      <div className="hero-content">
+      <div className="hero-content reveal reveal-left">
         <p className="hero-eyebrow">Hello, I’m</p>
 
         <h1>
@@ -30,7 +30,7 @@ function Hero() {
         
       </div>
 
-      <div className="hero-image-wrap">
+      <div className="hero-image-wrap reveal reveal-right">
         <div className="hero-accent" />
         <img
           className="hero-image"

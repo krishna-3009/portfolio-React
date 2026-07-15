@@ -19,6 +19,30 @@ body {
   color: #fff;
 }
 
+/* IntersectionObserver adds .visible when an element enters the viewport. */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left {
+  transform: translateX(-38px);
+}
+
+.reveal-right {
+  transform: translateX(38px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.15s;
+}
+
 /* ===============================
    NAVBAR
 ================================ */
@@ -34,11 +58,13 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  transition: padding 0.3s ease;
+  transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.shrink {
   padding: 10px 50px;
+  background: rgba(0, 0, 0, 0.96);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
 }
 
 .logo {
@@ -969,5 +995,19 @@ body {
 @media screen and (min-width: 769px) {
   .menu-toggle {
     display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
