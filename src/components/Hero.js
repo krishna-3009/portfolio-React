@@ -20,7 +20,7 @@ function Hero() {
           responsive interfaces.
         </p>
 <div className="hero-actions">
-          <a className="primary-btn" href="#portfolio">
+          <a className="primary-btn" href="/work">
             View My Work
           </a>
           <a className="secondary-btn" href="#contact">

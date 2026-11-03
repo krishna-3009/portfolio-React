@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import WorkPage from "./components/WorkPage";
 import "./App.css";
 
 function App() {
@@ -25,11 +27,16 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+  if (window.location.pathname === "/work") {
+    return <WorkPage />;
+  }
+
   return (
     <>
       <Navbar />
       <Hero />
       <Projects />
+      <Certifications />
       <Skills />
       <About />
       <Contact />

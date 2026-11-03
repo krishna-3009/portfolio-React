@@ -48,7 +48,7 @@ function Navbar() {
       </button>
 
       <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-        {["home", "projects", "skills", "about", "contact"].map((item) => (
+        {["home", "projects", "certifications", "skills", "about", "contact"].map((item) => (
           <a
             key={item}
             href={`#${item}`}
